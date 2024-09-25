@@ -5,7 +5,7 @@ const server = http.createServer(app);
 //const { Server } = require('socket.io');
 const io = require('socket.io')(server, {
   cors: {
-    origin: ["http://localhost:5173","https://cool-banoffee-1bc218.netlify.app", "https://main--cool-banoffee-1bc218.netlify.app/"], // or the URL of your Vue.js app
+    origin: ["http://localhost:5173","https://cool-banoffee-1bc218.netlify.app"], // or the URL of your Vue.js app
     methods: ["GET", "POST"]
   }
 });
